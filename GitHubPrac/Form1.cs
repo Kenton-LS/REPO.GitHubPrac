@@ -24,11 +24,14 @@ namespace GitHubPrac
         {
             // Comment added through GitHub editing
         
-            playerName = txtPlayerName.Text;
-            dragonName = txtDragonName.Text;
+            if (txtPlayerName.Text != "") 
+            {
+                playerName = txtPlayerName.Text;
+                dragonName = txtDragonName.Text;
 
-            rtbLog.Text = "Player Name: " + playerName +
-                            "\nDragon Name: " + dragonName;
+                rtbLog.Text = "Player Name: " + playerName +
+                                "\nDragon Name: " + dragonName;
+            }
         }
     }
 }
