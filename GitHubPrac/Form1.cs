@@ -24,13 +24,17 @@ namespace GitHubPrac
         {
             // Comment added through GitHub editing
         
-            if (txtPlayerName.Text != "") 
+            if (txtPlayerName.Text != "" && txtDragonName.Text != "") 
             {
                 playerName = txtPlayerName.Text;
                 dragonName = txtDragonName.Text;
 
                 rtbLog.Text = "Player Name: " + playerName +
                                 "\nDragon Name: " + dragonName;
+            }
+            else
+            {
+                rtbLog.Text = "You didn't enter anything, and a homeless man kills you. You die to Homeless Man No Jutsu";
             }
 
 //           ⣠⣤⣤⣤⣤⣤⣤⣤⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀ 
